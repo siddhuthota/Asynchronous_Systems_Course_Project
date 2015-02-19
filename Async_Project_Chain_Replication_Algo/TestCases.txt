@@ -1,0 +1,23 @@
+TestCases
+----------
+
+To test any test case require all the below has steps in common. We had written scripts to run all servers of bank, Clients of bank and master individually. Paste each test case folder in its parent folder and run in terminals at that locations.
+
+Shell scripts to run specific server/master/client (Should run in different terminals)
+--------------------------------------------------
+1. Master.sh - To run master
+2. FirstBankServerStartScript.sh - To start first banks servers (Taken bank as ICICI)
+3. SecondBankServerStartScript.sh - To start second bank servers (Taken bank as HDFC)
+4. ICICI_ClientsStartScript.sh - To start ICICI clients
+4. HDFC_ClientsStartScript.sh - To start HDFC clients
+
+Running all these script files in different terminals performs different testcases (Given below).
+
+Test cases covered
+-------------------
+1. Basic_Operations - To perform basic operations which are independent to each bank
+2. Basic_Transfer_Operations - To perform transfer operation from ICICI to HDFC
+3. Duplicate_Transfer_Requests - To check duplicate requests of transfer
+4. Transfer_Insufficient_Funds - To check insufficient funds case in transfer
+5. Transfer_Head_Failure - While transfer in progress head of destination bank fails and then transfer succeeds after Master makes other server as head
+6. Transfer_Tail_Head_Failure - While transfer in progress tail of source bank and head of destination bank fails and then transfer succeeds after Master makes other server as head and other as tail

@@ -1,0 +1,16 @@
+{
+    "BANKS":[
+         {
+           "Bank":"ICICI",
+	   "TimeOut":800
+         },
+         {
+           "Bank":"HDFC",
+	   "TimeOut":1500
+         },
+         {
+           "Bank":"BOA",
+	   "TimeOut":15
+         }
+       ]
+}
